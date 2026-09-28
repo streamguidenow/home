@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1 2026 Season: Live Stream Guide, Event Information & Race Calendar</title>
+	<link href="icon.png" rel="icon" type="image/x-icon">
+    <style>
+        :root {
+            --primary-red: #ff1801;
+            --primary-hover: #d01100;
+            --bg-dark: #0f1015;
+            --card-bg: #1a1c23;
+            --text-main: #ffffff;
+            --text-muted: #a0a5b5;
+            --accent-border: #2e3240;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(15, 16, 21, 0.95);
+            border-bottom: 1px solid var(--accent-border);
+            padding: 18px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-btn {
+            background-color: transparent;
+            border: 1px solid var(--accent-border);
+            color: var(--text-main);
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .menu-btn:hover {
+            background-color: var(--primary-red);
+            border-color: var(--primary-red);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text-main);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .logo span {
+            color: var(--primary-red);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .hero-card {
+            background: var(--card-bg);
+            border: 1px solid var(--accent-border);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--text-main);
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-card p {
+            color: var(--text-muted);
+            font-size: 16px;
+            max-width: 800px;
+            margin: 0 auto 25px auto;
+        }
+
+        .banner-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: 1px solid var(--accent-border);
+            background: #121319;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .banner-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 21 / 9;
+        }
+
+        .banner-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--primary-red);
+            color: #fff;
+            padding: 5px 12px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 40px 0 20px 0;
+            color: var(--text-main);
+            border-left: 4px solid var(--primary-red);
+            padding-left: 12px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .race-card {
+            background: var(--card-bg);
+            border: 1px solid var(--accent-border);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .race-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-red);
+        }
+
+        .race-card h3 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+            color: var(--text-main);
+        }
+
+        .race-card .round {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--primary-red);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .race-card .location {
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .race-card .date {
+            font-size: 13px;
+            color: var(--text-main);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .race-card .btn-link {
+            display: inline-block;
+            background: #ba0000;
+            color: var(--text-main);
+            border: 1px solid var(--accent-border);
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .race-card .btn-link:hover {
+            background: var(--primary-red);
+            border-color: var(--primary-red);
+            color: #fff;
+        }
+
+        .features-box {
+            background: linear-gradient(145deg, #181a22, #13141b);
+            border-left: 4px solid var(--primary-red);
+            border-radius: 6px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .features-box h2 {
+            margin-top: 0;
+            font-size: 22px;
+            color: var(--text-main);
+        }
+
+        .features-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .features-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-red);
+            font-weight: bold;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin: 35px 0 15px 0;
+        }
+
+        .cta-button {
+            background-color: var(--primary-red);
+            color: #ffffff;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(255, 24, 1, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(255, 24, 1, 0.6);
+        }
+
+        .cta-subtext {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 12px;
+        }
+
+        footer {
+            border-top: 1px solid var(--accent-border);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: var(--text-main);
+        }
+
+        .disclaimer {
+            max-width: 700px;
+            margin: 18px auto 0 auto;
+            font-size: 11px;
+            line-height: 1.5;
+            color: #666e80;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            border: 1px solid var(--accent-border);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 25px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            color: var(--text-main);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--text-muted);
+            cursor: pointer;
+        }
+
+        .modal-close:hover {
+            color: var(--primary-red);
+        }
+
+        .modal-title {
+            color: var(--primary-red);
+            margin-top: 0;
+            font-size: 22px;
+            border-bottom: 1px solid var(--accent-border);
+            padding-bottom: 10px;
+        }
+
+        .nav-drawer {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 280px;
+            height: 100%;
+            background-color: var(--card-bg);
+            border-left: 1px solid var(--accent-border);
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.8);
+            z-index: 1001;
+            transition: right 0.3s ease-in-out;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .nav-drawer.active {
+            right: 0;
+        }
+
+        .drawer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--accent-border);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .close-drawer {
+            font-size: 28px;
+            color: var(--text-muted);
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close-drawer:hover {
+            color: var(--primary-red);
+        }
+
+        .drawer-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .drawer-menu li {
+            margin-bottom: 15px;
+        }
+
+        .drawer-menu li.divider {
+            height: 1px;
+            background: var(--accent-border);
+            margin: 20px 0;
+        }
+
+        .drawer-menu a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            display: block;
+            transition: color 0.2s ease;
+        }
+
+        .drawer-menu a:hover {
+            color: var(--primary-red);
+        }
+
+        .drawer-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(3px);
+            z-index: 1000;
+        }
+
+        .drawer-overlay.active {
+            display: block;
+        }
+		
+	.f1-blog-container {
+    background: var(--card-bg);
+    border: 1px solid var(--accent-border);
+    border-radius: 12px;
+    padding: 5px 25px;
+    margin: 10px 0;
+    color: var(--text-main);}
+	
+	.f1-blog-header {
+    border-left: 4px solid var(--primary-red);
+    padding-left: 15px;
+    margin-bottom: 25px;}
+	
+	.f1-blog-header h2 {
+    font-size: 26px;
+    margin: 0 0 10px 0;
+    color: var(--text-main);}
+	
+	.f1-blog-header p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;}
+	
+	.f1-blog-content p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;}
+	
+	.f1-blog-content h3 {
+    color: #fff;
+    font-size: 22px;
+    margin: 30px 0 12px 0;}
+	
+	.f1-table-wrapper {
+    overflow-x: auto;
+    margin: 25px 0;
+    border: 1px solid var(--accent-border);
+    border-radius: 8px;}
+	
+	.f1-custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    text-align: left;}
+	
+	.f1-custom-table th {
+    background: #121319;
+    color: var(--primary-red);
+    padding: 12px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--accent-border);}
+	
+	.f1-custom-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--accent-border);
+    color: var(--text-muted);
+    background: #161820;}
+	
+	.f1-custom-table tr:last-child td {
+    border-bottom: none;}
+	
+	.f1-custom-table td strong {
+    color: var(--text-main);}
+	
+	.f1-blog-highlight {
+    background: #121319;
+    border-left: 3px solid var(--primary-red);
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;}
+	
+	.f1-blog-highlight p {
+    margin: 0;
+    color: var(--text-main);
+    font-size: 13px;}
+	
+	.f1-faq-section {
+    background: var(--card-bg);
+    border: 1px solid var(--accent-border);
+    border-radius: 12px;
+    padding: 5px 25px;
+    margin: 10px 0;}
+	
+	.faq-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;}
+	
+	.faq-box {
+    background: #121319;
+    border: 1px solid var(--accent-border);
+    border-radius: 8px;
+    padding: 15px;
+    transition: border-color 0.3s ease;}
+	
+	.faq-box:hover {
+    border-color: var(--primary-red);}
+	
+	.faq-question {
+    color: var(--text-main);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;}
+	
+	.faq-question span {
+    color: var(--primary-red);}
+	
+	.faq-answer {
+    color: var(--text-muted);
+    font-size: 13.5px;
+    line-height: 1.7;
+    margin: 0;}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://streamguidenow.github.io/home" class="logo">STREAM<span>GUIDE</span></a>
+		<button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+    </header>
+
+	<div id="sideDrawer" class="nav-drawer">
+        <div class="drawer-header">
+            <span class="logo">STREAM<span>GUIDE</span></span>
+            <span class="close-drawer" onclick="toggleMenu()">&times;</span>
+        </div>
+        <ul class="drawer-menu">
+            <li><a href="#race-schedule" onclick="toggleMenu()">Race Calendar</a></li>
+            <li><a href="#streaming-features" onclick="toggleMenu()">Streaming Guide</a></li>
+            <li class="divider"></li>
+            <li><a href="javascript:void(0)" onclick="toggleMenu(); openModal('privacyModal');">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)" onclick="toggleMenu(); openModal('termsModal');">Terms of Service</a></li>
+            <li><a href="javascript:void(0)" onclick="toggleMenu(); openModal('contactModal');">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="drawerOverlay" class="drawer-overlay" onclick="toggleMenu()"></div>
+
+    <div class="container">
+        <div class="hero-card">
+            <h1>Formula 1 Grand Prix 2026: Race Calendar, Event Information & Live Stream Guide</h1>
+            <p>Welcome to StreamGuide's ultimate F1 2026 portal. Track full schedules, session timings, circuit stats & live streaming information.</p>
+            <div class="banner-wrapper">
+                <span class="banner-badge">Formula 1</span>
+                <img src="f1.jpg" alt="Formula 1 Season 2026" class="banner-img">
+            </div>
+        </div>
+		<div class="f1-blog-header">
+        <h2>Everything You Need to Know About the 2026 F1 Season</h2>
+	    </div>
+		<div class="f1-blog-container">
+		<p>The 2026 Formula 1 Championship introduces one of the most comprehensive technical, engine, and aerodynamic overhauls in motorsport history. Here is a complete analysis of the new era.</p>
+
+    <div class="f1-blog-content">
+        <h3>A New Era of Engine Sustainability & Power</h3>
+        <p>
+            Starting in 2026, Formula 1 power units undergo a massive architectural shift. While the iconic 1.6-liter V6 turbocharged internal combustion engine remains, the hybrid setup changes dramatically. The complex MGU-H (Motor Generator Unit - Heat) has been completely removed to lower manufacturing costs and attract new engine builders. In its place, the MGU-K (Kinetic) output leaps from 120 kW to 350 kW (~470 bhp), creating a balanced 50/50 split between electric power and combustion engine power.
+        </p>
+        <p>
+            Additionally, all cars will run on 100% advanced sustainable synthetic fuels created from non-food bio-sources or atmospheric carbon capture, making the sport net-zero carbon operational.
+        </p>
+        <h3>Key Technical Specifications (2025 vs 2026)</h3>
+        <div class="f1-table-wrapper">
+            <table class="f1-custom-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>2025 Season</th>
+                        <th>2026 Season</th>
+                        <th>Impact / Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Electric Power (MGU-K)</strong></td>
+                        <td>120 kW (160 hp)</td>
+                        <td>350 kW (470 hp)</td>
+                        <td>~300% increase in electrical battery output</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MGU-H Component</strong></td>
+                        <td>Included</td>
+                        <td>Removed</td>
+                        <td>Lowers engine complexity and entry costs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fuel Type</strong></td>
+                        <td>E10 Fuel</td>
+                        <td>100% Sustainable E-Fuel</td>
+                        <td>Zero-net operational carbon emissions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Minimum Weight</strong></td>
+                        <td>798 kg</td>
+                        <td>768 kg</td>
+                        <td>30 kg lighter for better handling agility</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wheelbase & Width</strong></td>
+                        <td>3,600mm / 2,000mm</td>
+                        <td>3,400mm / 1,900mm</td>
+                        <td>Shorter and narrower chassis dimensions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>Active Aerodynamics: Say Goodbye to Traditional DRS</h3>
+        <p>
+            The familiar Drag Reduction System (DRS) is officially replaced in 2026 by an advanced Active Aerodynamics system. Cars feature movable front and rear wings that switch modes dynamically on track:
+        </p>
+        
+        <div class="f1-blog-highlight">
+            <p><strong>Z-Mode:</strong> Wings open for maximum downforce and cornering stability in technical sectors.<br>
+            <strong>X-Mode:</strong> Wings flatten on straightaways to drastically shed drag and increase top speed.</p>
+        </div>
+
+        <p>
+            To replace the overtaking boost provided by DRS, F1 introduces a <strong>Manual Override Mode</strong>. Trailing cars within striking distance gain extra electrical power deployment up to 337 km/h, creating tactical passing opportunities.
+        </p>
+        <h3>2026 Team & Power Unit Supplier Allocations</h3>
+        <div class="f1-table-wrapper">
+            <table class="f1-custom-table">
+                <thead>
+                    <tr>
+                        <th>Team Name</th>
+                        <th>Engine Supplier</th>
+                        <th>Partnership Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Red Bull Racing / RB</strong></td>
+                        <td>Red Bull Ford Powertrains</td>
+                        <td>New in-house power unit developed with Ford</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Audi F1 Team</strong></td>
+                        <td>Audi Works Power Unit</td>
+                        <td>Full works entry after Sauber takeover</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aston Martin Aramco</strong></td>
+                        <td>Honda Works</td>
+                        <td>Exclusive Honda works partnership</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mercedes-AMG / McLaren / Williams</strong></td>
+                        <td>Mercedes-AMG HPP</td>
+                        <td>Works team & customer arrangements</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scuderia Ferrari / Haas</strong></td>
+                        <td>Ferrari Works</td>
+                        <td>Maranello works unit & technical supply</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alpine F1 Team</strong></td>
+                        <td>Strategic Partner / Mercedes</td>
+                        <td>Customer engine transition setup</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h3>What to Expect from the 2026 Calendar</h3>
+        <p>
+            The 2026 season features an expanded global calendar grouped geographically across Europe, Asia, the Americas, and the Middle East to reduce transport emissions. It also highlights the debut of the new Madrid hybrid street circuit alongside traditional crown-jewel tracks like Silverstone, Spa-Francorchamps, Monza, and Monaco.
+        </p>
+    </div>
+</div>
+        <h2 id="race-schedule" class="section-title">F1 Grand Prix 2026 Race Calendar</h2>
+        <div class="grid-container">
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 1</span>
+                    <h3>Australian Grand Prix</h3>
+                    <span class="location">Melbourne, Australia</span>
+                    <div class="date">06 - 08 March 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-australian-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 2</span>
+                    <h3>Chinese Grand Prix</h3>
+                    <span class="location">Shanghai, China</span>
+                    <div class="date">13 - 15 March 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-chinese-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 3</span>
+                    <h3>Japanese Grand Prix</h3>
+                    <span class="location">Suzuka, Japan</span>
+                    <div class="date">27 - 29 March 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-japanese-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 4</span>
+                    <h3>Miami Grand Prix</h3>
+                    <span class="location">Miami Gardens, USA</span>
+                    <div class="date">01 - 03 May 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-miami-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 5</span>
+                    <h3>Canadian Grand Prix</h3>
+                    <span class="location">Montreal, Canada</span>
+                    <div class="date">22 - 24 May 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-canadian-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 6</span>
+                    <h3>Monaco Grand Prix</h3>
+                    <span class="location">Monte Carlo, Monaco</span>
+                    <div class="date">05 - 07 June 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-monaco-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 7</span>
+                    <h3>Barcelona-Catalunya GP</h3>
+                    <span class="location">Barcelona, Spain</span>
+                    <div class="date">12 - 14 June 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-barcelona-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 8</span>
+                    <h3>Austrian Grand Prix</h3>
+                    <span class="location">Spielberg, Austria</span>
+                    <div class="date">26 - 28 June 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-austrian-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 9</span>
+                    <h3>British Grand Prix</h3>
+                    <span class="location">Silverstone, UK</span>
+                    <div class="date">03 - 05 July 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-british-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 10</span>
+                    <h3>Belgian Grand Prix</h3>
+                    <span class="location">Spa-Francorchamps, Belgium</span>
+                    <div class="date">17 - 19 July 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-belgian-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 11</span>
+                    <h3>Hungarian Grand Prix</h3>
+                    <span class="location">Mogyoród, Hungary</span>
+                    <div class="date">24 - 26 July 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-hungarian-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 12</span>
+                    <h3>Dutch Grand Prix</h3>
+                    <span class="location">Zandvoort, Netherlands</span>
+                    <div class="date">21 - 23 August 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-dutch-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 13</span>
+                    <h3>Italian Grand Prix</h3>
+                    <span class="location">Monza, Italy</span>
+                    <div class="date">04 - 06 September 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-italian-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 14</span>
+                    <h3>Spanish Grand Prix</h3>
+                    <span class="location">Madrid, Spain</span>
+                    <div class="date">11 - 13 September 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-madrid-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 15</span>
+                    <h3>Azerbaijan Grand Prix</h3>
+                    <span class="location">Baku, Azerbaijan</span>
+                    <div class="date">25 - 27 September 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-azerbaijan-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 16</span>
+                    <h3>Bahrain Grand Prix</h3>
+                    <span class="location">Sepang, Malaysia</span>
+                    <div class="date">2 - 4 October 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-bahrain-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 17</span>
+                    <h3>Singapore Grand Prix</h3>
+                    <span class="location">Marina Bay, Singapore</span>
+                    <div class="date">09 - 11 October 2026</div>
+                </div>
+                <a href="https://streamguidenow.github.io/f1-singapore-gp-2026" class="btn-link">View Event & Streaming Guide</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 18</span>
+                    <h3>United States Grand Prix</h3>
+                    <span class="location">Austin, United States</span>
+                    <div class="date">23 - 25 October 2026</div>
+                </div>
+                <a href="#streaming-features" class="btn-link">Coming Soon</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 19</span>
+                    <h3>Mexico City Grand Prix</h3>
+                    <span class="location">Mexico City, Mexico</span>
+                    <div class="date">30 October - 1 November 2026</div>
+                </div>
+                <a href="#streaming-features" class="btn-link">Coming Soon</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 20</span>
+                    <h3>São Paulo Grand Prix</h3>
+                    <span class="location">São Paulo, Brazil</span>
+                    <div class="date">6 - 8 November 2026</div>
+                </div>
+                <a href="#streaming-features" class="btn-link">Coming Soon</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 21</span>
+                    <h3>Las Vegas Grand Prix</h3>
+                    <span class="location">Las Vegas, United States</span>
+                    <div class="date">19 - 21 November 2026</div>
+                </div>
+                <a href="#streaming-features" class="btn-link">Coming Soon</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 22</span>
+                    <h3>Qatar Grand Prix</h3>
+                    <span class="location">Qatar, Lusail</span>
+                    <div class="date">27 - 29 November 2026</div>
+                </div>
+                <a href="#streaming-features" class="btn-link">Coming Soon</a>
+            </div>
+            <div class="race-card">
+                <div>
+                    <span class="round">Round 23</span>
+                    <h3>Abu Dhabi Grand Prix</h3>
+                    <span class="location">Abu Dhabi, UAE</span>
+                    <div class="date">4 - 6 December 2026</div>
+                </div>
+                <a href="#streaming-features" class="btn-link">Coming Soon</a>
+            </div>
+        </div>
+		<div id="streaming-features" class="info-section">
+                <br><center><h2>F1 Grand Prix 2026: Streaming Guide</h2></center>
+		</div>
+		<div class="info-section">
+                <center><h3>Are you ready to watch the high-speed action live? Secure your premium pass now to get started. Enjoy seamless and uninterrupted HD coverage of every single session. Join today and never miss a moment on the track!</h3></center></div>
+		    <div class="cta-container">
+                <a href="https://cjewz.com/af?o=96bbc2bc222b74bc163299b820b8ee87:06ee7c085a74738cf32c4294cc246a5e" class="cta-button">
+                    Get Premium Stream Access
+                </a>
+                <p class="cta-subtext">You will be redirected to the streaming partner's portal.</p>
+            </div>
+        <div class="features-box">
+				<div class="info-section">
+                <h3>Get in on the action and don’t miss the best moments. Start your membership to access:</h3></div>
+            <ul class="features-list">
+                    <li><strong>HD Streaming:</strong> High quality streaming with high frame-rates.</li>
+                    <li><strong>Multi-Device Access:</strong> Access your content across Smart TVs, PCs, iOS, Android and tablets.</li>
+                    <li><strong>Bufferless Streaming:</strong> Stream seamlessly from anywhere, anytime.</li>
+                    <li><strong>No Ads:</strong> Clean visual experience without Ads or unexpected pop-ups.</li>
+                    <li><strong>Quick & Easy:</strong> A quick and easy-to-use interface.</li>
+                </ul>
+        </div>            
+	<div class="f1-faq-section">
+	<div>
+        <h2>F1 Season 2026 (FAQ): Frequently Asked Questions regarding the new 2026 technical, engine and aerodynamic regulations.</h2>
+	</div>
+    <div class="faq-grid">
+        <div class="faq-box">
+            <div class="faq-question"><span>Q:</span> What are the major engine changes in 2026?</div>
+            <div class="faq-answer">
+                A: Power units shift to a 50/50 balance between internal combustion and electric power. The electric battery output increases from 120kW to 350kW (~470 bhp). The complex MGU-H system has been completely removed to lower costs and attract new manufacturers.
+            </div>
+        </div>
+
+        <div class="faq-box">
+            <div class="faq-question"><span>Q:</span> Will cars still use traditional DRS in 2026?</div>
+            <div class="faq-answer">
+                A: No, traditional DRS is completely replaced by Active Aerodynamics (Z-Mode & X-Mode) and a new Manual Override electrical boost system for trailing cars.
+            </div>
+        </div>
+
+        <div class="faq-box">
+            <div class="faq-question"><span>Q:</span> What is Active Aerodynamics (Z-Mode & X-Mode)?</div>
+            <div class="faq-answer">
+                A: Active Aerodynamics allows drivers to switch wing flap angles dynamically. 'Z-Mode' opens wings for maximum downforce in corners, while 'X-Mode' flattens wings on straights to minimize drag and maximize top speed.
+            </div>
+        </div>
+
+        <div class="faq-box">
+            <div class="faq-question"><span>Q:</span> What kind of fuel will 2026 F1 cars run on?</div>
+            <div class="faq-answer">
+                A: All cars will run strictly on 100% advanced sustainable synthetic fuels created from non-food biological waste or atmospheric carbon capture, ensuring zero-net operational emissions.
+            </div>
+        </div>
+
+        <div class="faq-box">
+            <div class="faq-question"><span>Q:</span> How are car dimensions and weight changing?</div>
+            <div class="faq-answer">
+                A: Cars are smaller and lighter. Minimum car weight drops by 30kg (down to 768kg), car width narrows by 100mm, and the overall wheelbase shrinks by 200mm for better track agility.
+            </div>
+        </div>
+
+        <div class="faq-box">
+            <div class="faq-question"><span>Q:</span> Which new engine manufacturers are joining in 2026?</div>
+            <div class="faq-answer">
+                A: Audi officially enters as a full works team following their Sauber takeover. Ford partners with Red Bull Powertrains, and Honda becomes the exclusive engine provider for Aston Martin.
+            </div>
+        </div><br><br>
+    </div></div></div>
+    <footer>
+        <div>
+            <a href="javascript:void(0)" onclick="openModal('privacyModal')">Privacy Policy</a> | 
+            <a href="javascript:void(0)" onclick="openModal('termsModal')">Terms of Service</a> | 
+            <a href="javascript:void(0)" onclick="openModal('contactModal')">Contact Us</a>
+        </div>
+        <p class="disclaimer">
+            Disclaimer: StreamGuide is an independent informational and promotional guide.<br>© 2026 StreamGuide
+        </p>
+    </footer>
+	
+    <div id="privacyModal" class="modal-overlay" onclick="closeModalOnOuterClick(event, 'privacyModal')">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('privacyModal')">&times;</span>
+            <h2 class="modal-title">Privacy Policy</h2>
+            <div class="modal-body">
+                <p>Last updated: August 2026</p>
+                <p>At StreamGuide, accessible from our website, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by StreamGuide and how we use it.</p>
+                <h3>Information Collection and Use</h3>
+                <p>StreamGuide does not require user registration or collect personal identification information directly on this site. We only gather standard non-personally identifiable technical data such as IP addresses, browser types, and referring/exit pages via analytics tools to optimize website performance.</p>
+                <h3>Cookies and Web Beacons</h3>
+                <p>Like any other website, StreamGuide uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited.</p>
+                <h3>Third Party Privacy Policies</h3>
+                <p>StreamGuide's Privacy Policy does not apply to other advertisers or websites. When you click on outgoing affiliate links, you will be redirected to third-party partner portals that have their own distinct privacy policies.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="termsModal" class="modal-overlay" onclick="closeModalOnOuterClick(event, 'termsModal')">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('termsModal')">&times;</span>
+            <h2 class="modal-title">Terms of Service</h2>
+            <div class="modal-body">
+                <p>Welcome to StreamGuide!</p>
+                <p>These terms and conditions outline the rules and regulations for the use of StreamGuide's Website.</p>
+                <h3>Informational Content Disclaimer</h3>
+                <p>StreamGuide is an independent promotional and informational website. We provide schedules, venue information, and event guides regarding motorsport events. StreamGuide does not host, stream, broadcast or transmit any video or audio content directly from its servers.</p>
+                <h3>Affiliate Disclosure</h3>
+                <p>This site contains promotional affiliate links. By clicking on these links and purchasing access or memberships via third-party partners, StreamGuide may earn a referral commission. This incurs no additional cost to you as the visitor.</p>
+                <h3>Third-Party Portals and Subscriptions</h3>
+                <p>When clicking outgoing buttons or links, you are redirected to authorized external partner portals. Any transaction, subscription, billing issue or access query is strictly between you and the respective third-party service provider.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactModal" class="modal-overlay" onclick="closeModalOnOuterClick(event, 'contactModal')">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('contactModal')">&times;</span>
+            <h2 class="modal-title">Contact Us</h2>
+            <div class="modal-body">
+			    <p>If you have any questions, feedback, or inquiries regarding our event guide, feel free to reach out to us using the form below.</p>
+                <form onsubmit="event.preventDefault(); alert('Thank you for reaching out!'); closeModal('contactModal');">
+                    <div style="margin-bottom: 12px;">
+                        <label style="display:block; font-size:12px; color:var(--text-muted); margin-bottom:4px;">Your Name</label>
+                        <input type="text" placeholder="John Doe" required style="width:100%; padding:8px; background:#121319; border:1px solid var(--accent-border); border-radius:4px; color:#fff; box-sizing:border-box;">
+                    </div>
+                    <div style="margin-bottom: 12px;">
+                        <label style="display:block; font-size:12px; color:var(--text-muted); margin-bottom:4px;">Your Email</label>
+                        <input type="email" placeholder="example@domain.com" required style="width:100%; padding:8px; background:#121319; border:1px solid var(--accent-border); border-radius:4px; color:#fff; box-sizing:border-box;">
+                    </div>
+                    <div style="margin-bottom: 12px;">
+                        <label style="display:block; font-size:12px; color:var(--text-muted); margin-bottom:4px;">Message</label>
+                        <textarea rows="4" placeholder="Write your message here..." required style="width:100%; padding:8px; background:#121319; border:1px solid var(--accent-border); border-radius:4px; color:#fff; box-sizing:border-box;"></textarea>
+                    </div>
+                    <button type="submit" style="background:var(--primary-red); color:#fff; border:none; padding:10px 20px; font-weight:700; border-radius:4px; cursor:pointer; width:100%; text-transform:uppercase;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+	<script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function closeModalOnOuterClick(event, modalId) {
+            if (event.target.id === modalId) {
+                closeModal(modalId);
+            }
+        }
+
+		function toggleMenu() {
+            const drawer = document.getElementById('sideDrawer');
+            const overlay = document.getElementById('drawerOverlay');
+            drawer.classList.toggle('active');
+            overlay.classList.toggle('active');
+	    }
+    </script>
+</body>
+</html>
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5054579,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5054579&101" alt="web stats" border="0"></a></noscript>
+<!-- Histats.com  END  -->
